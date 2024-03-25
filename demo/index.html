@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+    <nav id="desktop-nav">
+        <div class="logo">Shivani Sharma</div>
+        <div>
+            <ul class="navlinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shivani Sharma</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile.png" alt="shivani sharma profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Shivani Sharma</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/shivani-sharma-35b857230/'">
+
+                <img src="./assets/github.png" alt="github profile" class="icon" onclick="location.href='https://github.com/shivani-202/'">
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container education-container">
+                        <img src="./assets/education.png" alt="education" class="icon">
+                        <h3>Education</h3>
+                        <p>Currently pursuing Integrated M. Tech - Computer Science and Engineering from NIT HAMIRPUR.<br>SGPA: 9.29<br>CGPA: 8.68</p>
+                        <div class="details-conatiner skills-conatiner">
+                        <img src="./assets/experience.png" alt="skills" class="icon">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVA SCRIPT</li>
+                            <li>REACT JS</li>
+                            <li>SQL</li>
+                            <li>PYTHON</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam tempora, quas dignissimos inventore nemo magni, iure adipisci repellendus laboriosam optio, provident nihil a labore eaque corrupti nostrum exercitationem earum mollitia?</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="slider" class="icon" onclick="location.href = './#project'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Skills</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers"></div>
+        </div>
+    </section>
+    <section id="projects"></section>
+    <section id="contact"></section>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
