@@ -31,9 +31,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 14.5vh;
-    background-color: rgb(242, 239, 229);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    
+    /* background-color: rgb(242, 239, 229); */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
 }
 
 .navlinks{
@@ -250,8 +249,8 @@ section{
 }
 
 .btn-color-2:hover{
-    border: rgb(255, 255, 255) 0.1rem solid;
-    color: white;
+    border: rgb(0, 0, 0) 0.1rem solid;
+    color: black;
 }
 
 .btn-container{
@@ -325,7 +324,8 @@ section{
 .skills-sub-title{
     color: rgb(85, 85, 85);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -337,6 +337,116 @@ section{
 
 .article-container{
     display: flex;
-    text-align: initial;
+    text-align: center;
     flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: left;
 }
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+.skill-set{
+    /* display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center; */
+    cursor: default;
+}
+
+/*project section*/
+
+#projects{
+    position: relative;
+}
+
+.color-container{
+    border-color: rgb(163,163,163);
+    background: rgb(250, 250, 250);
+}
+
+.project-img{
+    border-radius: 2rem;
+    width: 250px;
+    height: 250px;
+}
+
+.project-title{
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn{
+    color: black;
+    border-color: rgb(163,163,163);
+}
+
+.project-desc{
+    text-align: justify;
+    color: black;
+    font-size: small;
+    margin-bottom: 1rem;
+}
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+  
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+  
+
+  /* FOOTER SECTION */
+  
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+  }
